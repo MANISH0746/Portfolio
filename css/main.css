@@ -64,7 +64,7 @@
      text-transform: uppercase;
      font-size: 2.6rem;
      font-weight: 400;
-     color: rgb(255, 255, 255);
+     color: var(--bg-color);
      transition: all 0.3s;
  }
 
@@ -83,7 +83,7 @@
  .mobile-menu-icon {
      width: 4rem;
      height: 4rem;
-     color: #111;
+     color: var(--bg-color);
  }
 
  .mobile-menu-icon[name="close-outline"] {
@@ -95,12 +95,12 @@
      background-image: url(/media/background.jpg);
      background-repeat: no-repeat;
      background-size: cover;
-     padding: 50px 2%;
+     padding: 50px 4% 50px 2%;
      position: relative;
      width: 100%;
      min-height: 100vh;
      display: grid;
-     grid-template-columns: 3fr 1fr;
+     grid-template-columns: 2fr 1fr;
      align-items: center;
      /* gap: 1rem; */
  }
@@ -112,29 +112,79 @@
      gap: 0.5rem;
  }
 
- .githublogo, .wordpresslogo ,.linkedinlogo, .qrcodelogo {
+ .githublogo,
+ .wordpresslogo,
+ .linkedinlogo,
+ .qrcodelogo {
      width: 50px;
      height: 50px;
      display: flex;
      justify-content: center;
      align-items: center;
-     background:rgba(255, 255, 255, 0.3);   
+     background: rgba(255, 255, 255, 0.3);
      backdrop-filter: blur(15px);
      padding-top: 10px;
      border-radius: 10%;
+     box-shadow: 0px 1px 2px -1px #111;
+
+ }
+
+ ion-icon:hover {
+     color: #e05a9a;
  }
 
  ion-icon {
-     color: white;
+     color: var(--bg-color);
  }
 
- .content{
-width: 100%;
+ .content {
+     width: 100%;
+     color: var(--bg-color);
+     padding: 4rem;
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(10px);
+     border-radius: 2rem;
+     box-shadow: 0px 1px 2px -1px #111;
  }
-.content span{
-    font-size: 10px;
-}
 
+ .content span {
+     font-size: 3rem;
+ }
+
+ .content h1 {
+     font-size: 6rem;
+ }
+
+ .content h2 {
+     font-size: 2.4rem;
+ }
+
+ .content p {
+     font-size: 1.6rem;
+     padding: 1rem 0;
+ }
+
+ .herobuttons {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+ }
+
+ .view_more {
+     width: 14rem;
+     height: 4rem;
+     border-radius: 1rem;
+     border: none;
+     font-size: 2rem;
+ }
+
+ .contact_me {
+     width: 14rem;
+     height: 4rem;
+     border-radius: 1rem;
+     border: none;
+     font-size: 2rem;
+ }
 
  /* footer css  */
  .footer {
@@ -151,6 +201,83 @@ width: 100%;
      padding: 18px 0;
  }
 
+ /* about me section  */
+ .about-section h1 {
+     display: flex;
+     justify-content: center;
+     font-size: 4rem;
+     padding: 5rem 2rem 0rem 2rem;
+ }
+
+ .aboutme {
+     position: relative;
+     width: 100%;
+     min-height: 100vh;
+     display: grid;
+     grid-template-columns: 2fr 2fr;
+     padding: 6rem 6rem 10rem 6rem;
+ }
+
+ .imgcontainer {
+     width: 37rem;
+     height: 45rem;
+     border: 10px #3a5532 solid;
+     position: relative;
+     top: 6rem;
+     left: 3rem;
+
+ }
+
+ .aboutmeimg {
+     position: absolute;
+     width: 35rem;
+     height: 45rem;
+     bottom: 4rem;
+     left: 5rem;
+     border: 10px white solid;
+ }
+
+ .aboutcontent h2 {
+     font-size: 3rem;
+     padding: 1rem 0rem;
+
+ }
+
+ .aboutcontent span {
+     font-size: 2.5rem;
+     align-items: center;
+    display: flex;
+    gap: 3rem;
+
+ }
+
+ .aboutlogo {
+     display: flex;
+     flex-direction: column;
+     padding-top: 2rem;
+     gap: 2rem;
+
+ }
+
+ .aboutcontent ion-icon {
+     font-size: 3rem;
+     color: #111;
+ }
+
+ .cvdownloadbtn {
+     width: 20rem;
+     height: 6rem;
+     border-radius: 1rem;
+     border: none;
+     font-size: 2.5rem;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+ }
+ 
+
+
 
 
 
@@ -162,10 +289,12 @@ width: 100%;
          display: block;
          z-index: 999;
      }
+
      .navbar-links:link,
      .navbar-links:visited {
-        color: #111;
+         color: #111;
      }
+
      .header {
          position: relative;
          padding: 0 4.4rem;
