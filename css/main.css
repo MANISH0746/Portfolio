@@ -9,10 +9,11 @@
  }
 
  :root {
-     --main-color: #033a80;
-     --bg-color: white;
+     --main-color: #1b59a8b5;
+     --bg-color: #006c9b40;
      --text-color: black;
      --hover: #031440;
+     --bigtext-color: white;
  }
 
  body {
@@ -71,7 +72,7 @@
      text-transform: uppercase;
      font-size: 2.6rem;
      font-weight: 400;
-     color: var(--bg-color);
+     color: var(--bigtext-color);
      transition: all 0.3s;
  }
 
@@ -90,19 +91,19 @@
  .mobile-menu-icon {
      width: 4rem;
      height: 4rem;
-     color: var(--bg-color);
+     color: var(--bigtext-color);
  }
 
  .mobile-menu-icon[name="close-outline"] {
      display: none;
  }
 
- /* hero section  */
+ /* ================================hero section=========================================  */
  .section-hero {
      background-image: url(/media/background.jpg);
      background-repeat: no-repeat;
      background-size: cover;
-     padding: 50px 4% 50px 2%;
+     padding: 20rem 4% 10rem 2%;
      position: relative;
      width: 100%;
      min-height: 100vh;
@@ -141,12 +142,12 @@
  }
 
  ion-icon {
-     color: var(--bg-color);
+     color: var(--bigtext-color);
  }
 
  .content {
      width: 100%;
-     color: var(--bg-color);
+     color: var(--bigtext-color);
      padding: 4rem;
      background: rgba(255, 255, 255, 0.1);
      backdrop-filter: blur(10px);
@@ -208,7 +209,7 @@
      padding: 18px 0;
  }
 
- /* about me section  */
+ /* ============================about me section====================================  */
  .about-section {
      background: #006c9b40;
  }
@@ -223,10 +224,10 @@
  .aboutme {
      position: relative;
      width: 100%;
-     min-height: 100vh;
+     min-height: 90vh;
      display: grid;
      grid-template-columns: 2fr 2fr;
-     padding: 6rem 6rem 10rem 6rem;
+     padding: 6rem 6rem 1rem 6rem;
  }
 
  .imgcontainer {
@@ -358,6 +359,149 @@
      text-decoration: none;
 
  }
+
+ /* =========================skills-section========================== */
+ .skills-section h1 {
+     display: flex;
+     justify-content: center;
+     font-size: 4rem;
+ }
+
+ .skills-section {
+     background: #006c9b40;
+ }
+
+ .myskills {
+     display: grid;
+     grid-template-columns: 2fr 2fr;
+     align-items: center;
+ }
+
+ .bars {
+     padding: 10rem;
+ }
+
+ .bar-box {
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 2rem 0;
+     margin-bottom: 1rem;
+ }
+
+ .bar-box h3,
+ .bar-box span {
+     font-size: 2.1rem;
+     font-weight: 500;
+ }
+
+ .light-bars {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 1rem;
+     background-color: var(--main-color);
+     border-radius: 1rem;
+ }
+
+ .percent-bars {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     height: 1rem;
+     background-color: var(--hover);
+     border-radius: 1rem;
+ }
+
+ .html-bar {
+     width: 84%;
+ }
+
+ .css-bar {
+     width: 80%;
+ }
+
+ .js-bar {
+     width: 40%;
+ }
+
+ .php-bar {
+     width: 30%;
+ }
+
+ .wp-bar {
+     width: 70%;
+ }
+
+ /* =========================services-section========================== */
+ .services-section {
+     background: #006c9b40;
+ }
+
+ .services-section h1 {
+     font-size: 4rem;
+     display: flex;
+     justify-content: center;
+ }
+
+ .myservices {
+     width: 100%;
+     height: auto;
+     display: flex;
+     padding: 8rem 5rem;
+     justify-content: center;
+     align-items: center;
+     gap: 12rem;
+ }
+
+ .web-development,
+ .uiux-design,
+ .wordpress-development,
+ .shopify-development {
+     width: 25rem;
+     height: 25rem;
+     background: rgba(255, 255, 255, 0.3);
+     box-shadow: 0px 1px 2px -1px #111;
+     border-radius: 1rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .web-development img,
+ .uiux-design img,
+ .wordpress-development img,
+ .shopify-development img {
+     width: 50%;
+     height: auto;
+     padding-top: 2rem;
+ }
+
+ .web-development h2,
+ .uiux-design h2,
+ .wordpress-development h2,
+ .shopify-development h2 {
+     padding: 3rem 45rem;
+     font-size: 2.6rem;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

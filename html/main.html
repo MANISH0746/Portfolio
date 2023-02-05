@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manish's Portfolio</title>
-    <link rel="shortcut icon" href="/media/mlogo.svg" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/media/mlogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--  js liberay -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-    <!-- Header section -->
+    <!--=========================== Header section=============================== -->
     <header class="header">
         <a class="logo" href="/html/main.html">Manish Gupta</a>
 
@@ -22,9 +23,9 @@
             <ul class="navbar-list">
                 <li><a class="navbar-links" href="/html/main.html">Home</a></li>
                 <li><a class="navbar-links" href=" #about-section">about</a></li>
-                <li><a class="navbar-links" href="/html/skills.html">skills</a></li>
-                <li><a class="navbar-links" href="/html/services.html">services</a></li>
-                <li><a class="navbar-links" href="/html/Contact.html">contact</a></li>
+                <li><a class="navbar-links" href="#skills-section">skills</a></li>
+                <li><a class="navbar-links" href="#services-section">services</a></li>
+                <li><a class="navbar-links" href="#contact-section">contact</a></li>
             </ul>
         </nav>
         <div class="mobile-navbar-btn">
@@ -32,7 +33,7 @@
             <ion-icon name="close-outline" class="mobile-menu-icon"></ion-icon>
         </div>
     </header>
-    <!-- main section -->
+    <!--=========================== main section================================= -->
     <section class="section-hero" id="hero-section">
         <div class="sociallogo">
             <div class="githublogo">
@@ -59,15 +60,17 @@
                 <button class="contact_me">Contact Me</button>
             </div>
         </div>
+        <div id="about-section"></div>
     </section>
 
-    <!-- about section -->
-    <div id="about-section"></div>
+    <!--=========================== about section================================= -->
+
     <section class="about-section">
         <h1>About Me</h1>
         <div class="aboutme">
             <div class="imgcontainer">
-                <img class="aboutmeimg" src="/media/manish.jpg" alt="Manish Gupta Photo">
+                <img class="aboutmeimg" data-aos="slide-right" data-aos-duration="1000" src="/media/manish.jpg"
+                    alt="Manish Gupta Photo">
             </div>
             <div class="aboutcontent">
                 <h2>Frontend Developer / Wordpress Developer</h2>
@@ -83,14 +86,100 @@
                         9768809635</span>
                     <span class="mail-logo" tooltip="Click to Copy" tooltip-position="right"><ion-icon
                             name="mail-outline" class="maillogo"></ion-icon>manishgupta0746@gmail.com</span>
-                    <a class="download" href="/media/Manish_Gupta_Resume.pdf" download ><button class="cvdownloadbtn">Download CV <ion-icon name="reader-outline"
-                            class="cvdwonloadbtnlogo"></ion-icon></button></a>
+                    <a class="download" href="/media/Manish_Gupta_Resume.pdf" download><button
+                            class="cvdownloadbtn">Download CV <ion-icon name="reader-outline"
+                                class="cvdwonloadbtnlogo"></ion-icon></button></a>
                 </div>
+
             </div>
+            <div id="skills-section"></div>
         </div>
     </section>
 
-    <!-- skills section -->
+    <!--========================== skills section================================= -->
+
+    <section class="skills-section">
+        <h1>Skills</h1>
+        <div class="myskills">
+            <div class="bars">
+                <div class="bar-box">
+                    <h3>HTML</h3>
+                    <span>84%</span>
+                    <div class="light-bars"></div>
+                    <div class="percent-bars html-bar" data-aos="slide-right" data-aos-duration="1000"></div>
+                </div>
+                <div class="bar-box">
+                    <h3>CSS</h3>
+                    <span>80%</span>
+                    <div class="light-bars"></div>
+                    <div class="percent-bars css-bar" data-aos="slide-right" data-aos-duration="1000"></div>
+                </div>
+                <div class="bar-box">
+                    <h3>JAVASCRIPT</h3>
+                    <span>40%</span>
+                    <div class="light-bars"></div>
+                    <div class="percent-bars js-bar" data-aos="slide-right" data-aos-duration="1000"></div>
+                </div>
+                <div class="bar-box">
+                    <h3>PHP</h3>
+                    <span>30%</span>
+                    <div class="light-bars"></div>
+                    <div class="percent-bars php-bar" data-aos="slide-right" data-aos-duration="1000"></div>
+                </div>
+                <div class="bar-box">
+                    <h3>WORDPRESS</h3>
+                    <span>70%</span>
+                    <div class="light-bars"></div>
+                    <div class="percent-bars wp-bar" data-aos="slide-right" data-aos-duration="1000"></div>
+                </div>
+            </div>
+            <div class="others">
+                github
+                firebase
+                photoshop
+                adobe
+                react
+                bootstrap
+                shopify
+                jenkins
+
+            </div>
+        </div>
+        <div id="services-section"></div>
+    </section>
+
+    <!--========================== services section=============================== -->
+    <section class="services-section">
+        <h1>Services</h1>
+        <div class="myservices">
+            <div class="web-development">
+                <img class="serviceslogo-1" src="/media/webdevelopment-img.png" alt="web-development-logo">
+                <h2>Web Developement</h2>
+                <span></span>
+            </div>
+            <div class="uiux-design">
+                <img class="serviceslogo-2" src="/media/uiux-img.png" alt="uiux-design-logo">
+                <h2>UI/UX Design</h2>
+                <span></span>
+            </div>
+            <div class="wordpress-development">
+                <img class="serviceslog-1" src="/media/wordpress-img.png" alt="wordpress-development-logo">
+                <h2>Wordpress Developement</h2>
+                <span></span>
+            </div>
+            <div class="shopify-development">
+                <img class="serviceslogo-4" src="/media/shopifycolor-img.png" alt="shopify-development-logo">
+                <h2>Shopify Developement</h2>
+                <span></span>
+            </div>
+        </div>
+        <div class="freelance"></div>
+    </section>
+
+    <!--========================== contact section=============================== -->
+    <section class="contact-me">
+
+    </section>
 
 
 
@@ -98,19 +187,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- footer section  -->
+    <!--================================== footer section  =======================-->
     <footer>
         <div class="footer">
             <div class="icons">
@@ -123,7 +200,14 @@
         </div>
     </footer>
 
+
+
+
     <script src="/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
