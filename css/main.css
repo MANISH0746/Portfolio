@@ -488,19 +488,144 @@
  }
 
 
+ /* =========================project-section========================== */
 
+ .project-section {
+     background: #006c9b40;
+ }
 
+ .project-section h1 {
+     font-size: 4rem;
+     display: flex;
+     justify-content: center;
+ }
 
+ .myprojects {
+     width: 100%;
+     height: auto;
+     display: flex;
+     padding: 8rem 5rem;
+     justify-content: center;
+     align-items: center;
+     gap: 12rem;
+ }
 
+ .serenicolabs {
+     width: 35rem;
+     height: 35rem;
+     background: rgba(255, 255, 255, 0.3);
+     box-shadow: 0px 1px 2px -1px #111;
+     border-radius: 1rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
 
+ .serenicolabs img {
+     width: 100%;
+     height: auto;
+     padding: 1rem;
+ }
 
+ .serenicolabs h2 {
+     padding-top: 1rem;
+     font-size: 3.6rem;
+ }
 
+ .serenicolabs span {
+     padding-top: 1rem;
+     font-size: 3rem;
+ }
 
+ /* =========================Contactme-section========================== */
 
+ .contactme-section {
+     background: #006c9b40;
+ }
 
+ .contactme-section h1 {
+     font-size: 4rem;
+     display: flex;
+     justify-content: center;
+ }
 
+ .contactme {
+     display: grid;
+     grid-template-columns: 2fr 2fr;
+ }
 
+ .contact-content {
+     padding: 14rem 5rem 13rem 22rem;
+     display: flex;
+     flex-direction: column;
+ }
 
+ .contact-content p {
+     font-size: 4rem;
+     font-weight: 600;
+     margin-bottom: 40px;
+
+ }
+
+ .contact-content span {
+     font-size: 3rem;
+     font-weight: 400;
+     align-items: flex-start;
+     margin-bottom: 40px;
+ }
+
+ .phonelogo,
+ .maillogo,
+ .addresslogo {
+     margin-right: 15px;
+     font-size: 4rem;
+     font-weight: 500;
+     color: var(--main-color);
+ }
+.contact-form{
+    padding: 13rem 22rem 13rem 3rem;
+}
+ .contact-form input,
+ .contact-form textarea {
+     /* display: flex;
+     width: 50%;
+     justify-content: center;
+     flex-direction: column; */
+     border: none;
+     color: #111;
+     background-color: rgba(255, 255, 255, 0.3);
+     font-size: 2.3rem;
+     margin-bottom: 20px;
+     padding: 15px 40px 40px 20px ;
+     border-radius: 1rem;
+ }
+ .contact-form textarea {
+    width: 100%;
+ }
+ .contact-form .first-row input {
+    width: 100%;
+ }
+ .contact-form .second-row{
+    display: flex;
+    justify-content: space-between;
+ }
+ .contact-form .second-row input {
+    width: 48%;
+ }
+ ::placeholder{
+    color: black;
+}
+.contact-form .submitbtn{
+    width: 35%;
+    height: 12%;
+    font-size: 3rem;
+    border: none;
+    border-radius: 1rem;
+}
+.contact-form .submitbtn:hover{
+background-color: var(--hover);
+color: white;
+}
 
 
 
