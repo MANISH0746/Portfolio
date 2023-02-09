@@ -21,12 +21,12 @@
         <!-- <a href="/html/main.html"><img class="imglogo" src="/media/logo.png" alt="Manish's Logo"></a> -->
         <nav class="navigation">
             <ul class="navbar-list">
-                <li><a class="navbar-links" href="/html/main.html">Home</a></li>
                 <li><a class="navbar-links" href=" #about-section">about</a></li>
                 <li><a class="navbar-links" href="#skills-section">skills</a></li>
                 <li><a class="navbar-links" href="#services-section">services</a></li>
                 <li><a class="navbar-links" href="#project-section">projects</a></li>
-                <li><a class="navbar-links" href="#contact-section">contact</a></li>
+                <li><a class="navbar-links" href="">Blogs</a></li>
+                <li><a class="navbar-links" href="#contactme-section">contact</a></li>
 
             </ul>
         </nav>
@@ -39,13 +39,13 @@
     <section class="section-hero" id="hero-section">
         <div class="sociallogo">
             <div class="githublogo">
-                <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://github.com/MANISH0746" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
             </div>
             <div class="linkedinlogo">
-                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/manish-gupta-01751b23a/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
-            <div class="wordpresslogo">
-                <a href=""><ion-icon name="logo-wordpress"></ion-icon></a>
+            <div class="whatsapplogo">
+                <a href="https://wa.me/9768809635" target="blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
             </div>
             <div class="qrcodelogo">
                 <a href=""><ion-icon name="qr-code-outline"></ion-icon></a>
@@ -56,18 +56,17 @@
             <h1>Manish Gupta</h1>
             <h2>Frontend Developer / Wordpress Developer</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam praesentium fuga perferendis
-                minus odit non ducimus, aut soluta mollitia earum nobis, laboriosam dignissimos aliquid</p>
+                minus odit non ducimus </p>
             <div class="herobuttons">
-                <button class="view_more">View more</button>
-                <button class="contact_me">Contact Me</button>
+                <a href=" #about-section"><button class="view_more">View more</button></a>
+                <a href="#contact-section"><button class="contact_me">Contact Me</button></a>
             </div>
         </div>
-        <div id="about-section"></div>
+       
     </section>
-
+    
     <!--=========================== about section================================= -->
-
-    <section class="about-section">
+    <section class="about-section" id="about-section">
         <h1>About Me</h1>
         <div class="aboutme">
             <div class="imgcontainer">
@@ -79,8 +78,7 @@
                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam distinctio omnis magnam! Nobis
                     perspiciatis obcaecati temporibus accusantium debitis esse facilis vero voluptatem adipisci
                     voluptates, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptatibus debitis
-                    exercitationem obcaecati vel voluptas, minus nesciunt! Exercitationem, sit asperiores. At esse
-                    architecto voluptatibus ad quasi exercitationem consequuntur blanditiis facilis.</span>
+                    exercitationem obcaecati vel voluptas, minus nesciunt! Exercitationem, sit asperiores. At esse.</span>
                 <div class="aboutlogo">
                     <span class="person-name"><ion-icon name="person-outline" class="personlogo"></ion-icon>Manish
                         Gupta</span>
@@ -94,13 +92,12 @@
                 </div>
 
             </div>
-            <div id="skills-section"></div>
         </div>
     </section>
 
     <!--========================== skills section================================= -->
 
-    <section class="skills-section">
+    <section class="skills-section"  id="skills-section">
         <h1>Skills</h1>
         <div class="myskills">
             <div class="bars">
@@ -145,14 +142,14 @@
                 shopify
                 jenkins
             </div>
-            <div id="services-section"></div>
         </div>
 
 
     </section>
 
     <!--========================== services section=============================== -->
-    <section class="services-section">
+           
+    <section class="services-section" id="services-section">
         <h1>Services</h1>
         <div class="myservices">
             <div class="web-development">
@@ -175,14 +172,18 @@
                 <h2>Shopify Developement</h2>
                 <span></span>
             </div>
+            <div class="freelancer">
+                <img class="serviceslogo-4" src="/media/freelance-work.png" alt="Freelancer-logo">
+                <h2>Freelancing</h2>
+                <span></span>
+            </div>
         </div>
-        <div class="freelance"></div>
-        <div id="project-section"></div>
+       
     </section>
 
     <!--========================== Project section=============================== -->
 
-    <section class="project-section">
+    <section class="project-section" id="project-section">
         <h1>Projects</h1>
         <div class="myprojects">
             <div class="serenicolabs">
@@ -191,12 +192,11 @@
                 <span>Visit: <a href="https://sparkpune.com/serenicolabs.com/" target="_blank">Serenicolabs</a> </span>
             </div>
         </div>
-        <div id="contact-section"></div>
     </section>
 
     <!--========================== contact section=============================== -->
 
-    <section class="contactme-section">
+    <section class="contactme-section"  id="contactme-section">
         <h1>Contact Me</h1>
         <div class="contactme">
             <div class="contact-content">
@@ -208,40 +208,37 @@
                 <span class="address"><ion-icon name="location-outline" class="addresslogo"></ion-icon>Address
                 </span>
             </div>
-                <form action="" class="contact-form">
-                    <div class="first-row">
-                        <input class="name" type="text" placeholder="Name" required>
-                    </div>
-                    <div class="second-row">
-                        <input class="email" type="email" placeholder="Email" required>
-                        <input class="subject" type="text" placeholder="Subject" required>
-                    </div>
-                    <div class="third-row">
-                        <textarea name="message" id="message" rows="7" placeholder="Message"></textarea>
-                    </div>
-                    <button class="submitbtn" type="submit">Send</button>
-                </form>
-            </div>
+            <form action="" class="contact-form">
+                <div class="first-row">
+                    <input class="name" type="text" placeholder="Name" required>
+                </div>
+                <div class="second-row">
+                    <input class="email" type="email" placeholder="Email" required>
+                    <input class="subject" type="text" placeholder="Subject" required>
+                </div>
+                <div class="third-row">
+                    <textarea name="message" id="message" rows="7" placeholder="Message"></textarea>
+                </div>
+                <button class="submitbtn" type="submit">Send</button>
+            </form>
+        </div>
 
 
     </section>
 
-
-
-
-
-
-
     <!--================================== footer section  =======================-->
     <footer>
         <div class="footer">
-            <div class="icons">
-                <i class="fa fa-whatsapp"></i>
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-twitter"></i>
+            <h1>Manish Gupta</h1>
+            <span>Web design is not just about creating pretty layouts. It’s about understanding the marketing challenge behind your business.</span>
+            <div class="footer-sociallogo">
+                <a href="https://twitter.com/ManishG22539228" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://instagram.com/_manish_09_?igshid=YWJhMjlhZTc=" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://wa.me/9768809635" target="blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="mailto:manishgupta0746@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/manish-gupta-01751b23a/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
-            <P>© ManishGupta 202 All rights reserved</P>
+            <P>Copyright ©2023 Manish Gupta. All Rights Reserved</P>
         </div>
     </footer>
 

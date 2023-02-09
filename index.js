@@ -7,7 +7,7 @@ function togglenavbar(){
 }
 mobile_menu_btn.addEventListener("click",() => togglenavbar());
 
-// click to copy 
+// click to copy  Used Library 
 const copyMailId = document.querySelectorAll('.mail-logo');
 
 copyMailId.forEach(copyText => {
